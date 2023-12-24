@@ -1,7 +1,5 @@
 console.clear();
 const { spawn } = require("child_process");
-const express = require("express");
-const app = express();
 const chalk = require('chalk');
 const logger = require("./system-settings/console/console-logger.js");
 const path = require('path');
