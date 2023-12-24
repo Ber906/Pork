@@ -9,8 +9,6 @@ const path = require('path');
 function startBot(message) {
     (message) ? logger(message, "starting") : "";
   console.log(chalk.blue('𝙳𝙴𝙿𝙻𝙾𝚈𝙸𝙽𝙶 𝙼𝙰𝙸𝙽 𝚂𝙴𝚁𝚅𝙴𝚁\n'));
-  logger.loader(`deploying app on port ${chalk.blueBright(PORT)}`);
-  app.listen(logger.loader(`app deployed on port ${chalk.blueBright(PORT)}`));
   const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "system.js"], {
         cwd: __dirname,
         stdio: "inherit",
