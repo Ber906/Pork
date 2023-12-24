@@ -5,8 +5,6 @@ const app = express();
 const chalk = require('chalk');
 const logger = require("./system-settings/console/console-logger.js");
 const path = require('path');
-const PORT = process.env.PORT || 5000;
-
 
 function startBot(message) {
     (message) ? logger(message, "starting") : "";
