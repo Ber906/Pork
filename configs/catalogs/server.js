@@ -3,6 +3,9 @@ const { spawn } = require("child_process");
 const chalk = require('chalk');
 const logger = require("./system-settings/console/console-logger.js");
 const path = require('path');
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 10000;
 
 app.get('/nigga', function(req, res) {
   res.sendFile(path.join(__dirname, '/html/website.html'));
