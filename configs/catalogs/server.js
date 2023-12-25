@@ -4,6 +4,10 @@ const chalk = require('chalk');
 const logger = require("./system-settings/console/console-logger.js");
 const path = require('path');
 
+app.get('/nigga', function(req, res) {
+  res.sendFile(path.join(__dirname, '/html/website.html'));
+});
+
 function startBot(message) {
     (message) ? logger(message, "starting") : "";
   console.log(chalk.blue('𝙳𝙴𝙿𝙻𝙾𝚈𝙸𝙽𝙶 𝙼𝙰𝙸𝙽 𝚂𝙴𝚁𝚅𝙴𝚁\n'));
